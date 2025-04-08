@@ -9,7 +9,7 @@ public class SpaceStone extends Stone {
 
     //Variables constantes.
     private static final String COLOR = "Blue";
-    private static final String NAME = "SpaceStone";
+    private static final String NAME = "Space Stone";
     private static final String LOCATION = "Tesseract";
     private static final int ENERGY_lEVEL = 7;
 

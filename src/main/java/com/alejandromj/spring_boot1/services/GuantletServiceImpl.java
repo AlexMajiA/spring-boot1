@@ -10,6 +10,14 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 
+/**
+ * Esta clase GuantletServiceImpl es un servicio de Spring que tiene todas las gemas del infinito como dependencias.
+ * Spring se encarga de inyectarlas automáticamente cuando inicia la aplicación, gracias a:
+ * @Service: Marca esta clase como un bean de servicio, gestionado por Spring.
+ * @Autowired: Le dice a Spring que use inyección de dependencias en el constructor.
+ * @Qualifier("..."): Le especifica cuál de los beans de tipo Stone debe usar.
+ */
+
 @Service
 @Log
 @Getter
@@ -34,7 +42,7 @@ public class GuantletServiceImpl implements GuantletService {
             @Qualifier("power") Stone power,
             @Qualifier("reality") Stone reality,
             @Qualifier("soul") Stone soul,
-            @Qualifier("soul") Stone space,
+            @Qualifier("space") Stone space,
             @Qualifier("time") Stone time) {
 
         this.mind = mind;
