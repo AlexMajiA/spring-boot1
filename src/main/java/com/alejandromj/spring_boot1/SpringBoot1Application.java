@@ -2,11 +2,12 @@ package com.alejandromj.spring_boot1;
 
 import com.alejandromj.spring_boot1.services.GuantletService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBoot1Application {
+public class SpringBoot1Application implements CommandLineRunner {
 
 	@Autowired
 
@@ -19,7 +20,8 @@ public class SpringBoot1Application {
 	}
 
 
-
-
-
+	@Override
+	public void run(String... args) throws Exception {
+		this.guantletService.useFullPower();
+	}
 }
