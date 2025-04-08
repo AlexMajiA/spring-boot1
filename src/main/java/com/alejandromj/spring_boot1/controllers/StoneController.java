@@ -3,7 +3,9 @@ package com.alejandromj.spring_boot1.controllers;
 
 import com.alejandromj.spring_boot1.models.PowerStone;
 import com.alejandromj.spring_boot1.models.Stone;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -18,6 +20,7 @@ public class StoneController {
     private final Stone stone;
 
     //Constructor por parámetros,
+    @Autowired
     public StoneController(@Qualifier ("power")Stone stone) {
         this.stone = stone;
     }
@@ -31,6 +34,7 @@ public class StoneController {
      * @return
      */
     //Este metodo devuelve la gema inyectada, asumiendo que es de tipo PowerStone.
+    @GetMapping
     public PowerStone powerStone() {
     return (PowerStone) this.stone;     //Convierte (cast) la variable stone a PowerStone.
 

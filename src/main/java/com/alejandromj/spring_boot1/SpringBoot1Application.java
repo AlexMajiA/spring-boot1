@@ -11,7 +11,7 @@ public class SpringBoot1Application implements CommandLineRunner {
 
 	@Autowired
 
-	//Implemento la calse que extiende de la interfaz asñi, porque solo tengo una, en caso de haber más es necesario
+	//Implemento la clase que extiende de la interfaz así, porque solo tengo una, en caso de haber más es necesario
 	//marcar la principal con @Primary.
 	GuantletService guantletService;
 
