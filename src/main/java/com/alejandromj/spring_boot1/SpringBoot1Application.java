@@ -7,8 +7,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBoot1Application implements CommandLineRunner {
+public class SpringBoot1Application  {
 
+
+
+//----------------------------------------------------------------------------------------------------------------------
+	/*
 	@Autowired
 
 	//Implemento la clase que extiende de la interfaz así, porque solo tengo una, en caso de haber más es necesario
@@ -24,4 +28,7 @@ public class SpringBoot1Application implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		this.guantletService.useFullPower();
 	}
+ */
+
+
 }
