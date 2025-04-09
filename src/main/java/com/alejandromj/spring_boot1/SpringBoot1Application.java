@@ -10,7 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringBoot1Application implements CommandLineRunner {
 
-    @Value(value = "Hello World!!")
+    //En @Value se usa $ para llamar a variables y # para métodos.
+    @Value(value = "${spring.application.name;default-value}")
 private String value ;
 
 //----------------------------------------------------------------------------------------------------------------------
