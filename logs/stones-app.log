@@ -1,0 +1,15 @@
+2025-04-09T21:27:11.751+02:00  INFO 19264 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Starting SpringBoot1Application using Java 21.0.3 with PID 19264 (C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes started by amjpa in C:\Users\amjpa\IdeaProjects\spring-boot1)
+2025-04-09T21:27:11.753+02:00  INFO 19264 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : No active profile set, falling back to 1 default profile: "default"
+2025-04-09T21:27:11.810+02:00  INFO 19264 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-09T21:27:11.811+02:00  INFO 19264 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-09T21:27:12.787+02:00  INFO 19264 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-09T21:27:12.803+02:00  INFO 19264 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-09T21:27:12.804+02:00  INFO 19264 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-09T21:27:12.840+02:00  INFO 19264 --- [spring-boot1] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-04-09T21:27:12.841+02:00  INFO 19264 --- [spring-boot1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1030 ms
+2025-04-09T21:27:12.890+02:00  INFO 19264 --- [spring-boot1] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static methods: public static void com.alejandromj.spring_boot1.SpringBoot1Application.main(java.lang.String[])
+2025-04-09T21:27:13.211+02:00  INFO 19264 --- [spring-boot1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-09T21:27:13.272+02:00  INFO 19264 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-04-09T21:27:13.280+02:00  INFO 19264 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 1.993 seconds (process running for 2.422)
+2025-04-09T21:31:14.363+02:00  INFO 19264 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-09T21:31:14.370+02:00  INFO 19264 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
