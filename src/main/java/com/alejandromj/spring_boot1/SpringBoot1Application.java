@@ -7,17 +7,20 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
+@PropertySource("classpath:configs/stone.properties")   //extiendo stone.properties para poder inicializar los beans
 public class SpringBoot1Application implements CommandLineRunner {
 
     //En @Value se usa $ para llamar a variables y # para métodos.
     @Value(value = "${spring.application.name:default-value}")
-    private String value ;
+        private String value ;
 
-
+    @Value("${stones.mind.enabled}")
+        private boolean mindEneable;
     @Autowired
-    private PowerStone powerStone;
+        private PowerStone powerStone;
 
 //----------------------------------------------------------------------------------------------------------------------
 
@@ -39,6 +42,7 @@ public class SpringBoot1Application implements CommandLineRunner {
 
         System.out.println(value);
         System.out.println(powerStone);
+        System.out.println(mindEneable);
     }
 
 

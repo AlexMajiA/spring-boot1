@@ -552,3 +552,74 @@ Caused by: java.lang.IllegalStateException: The name or value attribute of @Cond
 2025-04-11T17:44:32.996+02:00  INFO 15300 --- [spring-boot1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2025-04-11T17:44:33.033+02:00  INFO 15300 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
 2025-04-11T17:44:33.041+02:00  INFO 15300 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 1.934 seconds (process running for 2.327)
+2025-04-11T17:48:03.845+02:00  INFO 15300 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-11T17:48:03.851+02:00  INFO 15300 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-11T17:51:39.664+02:00  INFO 2516 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Starting SpringBoot1Application using Java 21.0.3 with PID 2516 (C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes started by amjpa in C:\Users\amjpa\IdeaProjects\spring-boot1)
+2025-04-11T17:51:39.666+02:00  INFO 2516 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T17:51:39.720+02:00  INFO 2516 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-11T17:51:39.721+02:00  INFO 2516 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-11T17:51:39.780+02:00  WARN 2516 --- [spring-boot1] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.alejandromj.spring_boot1.SpringBoot1Application]
+2025-04-11T17:51:39.879+02:00 ERROR 2516 --- [spring-boot1] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.alejandromj.spring_boot1.SpringBoot1Application]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:203) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.4.jar:3.4.4]
+	at com.alejandromj.spring_boot1.SpringBoot1Application.main(SpringBoot1Application.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.4.jar:3.4.4]
+Caused by: java.io.FileNotFoundException: class path resource [claspath:configs/stone.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.core.io.support.EncodedResource.getInputStream(EncodedResource.java:160) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:100) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:74) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:60) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.core.io.support.ResourcePropertySource.<init>(ResourcePropertySource.java:67) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.core.io.support.DefaultPropertySourceFactory.createPropertySource(DefaultPropertySourceFactory.java:37) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.core.io.support.PropertySourceProcessor.processPropertySource(PropertySourceProcessor.java:93) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.PropertySourceRegistry.processPropertySource(PropertySourceRegistry.java:75) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:315) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:280) ~[spring-context-6.2.5.jar:6.2.5]
+	... 18 common frames omitted
+
+2025-04-11T17:52:05.809+02:00  INFO 3364 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Starting SpringBoot1Application using Java 21.0.3 with PID 3364 (C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes started by amjpa in C:\Users\amjpa\IdeaProjects\spring-boot1)
+2025-04-11T17:52:05.811+02:00  INFO 3364 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T17:52:05.868+02:00  INFO 3364 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-11T17:52:05.868+02:00  INFO 3364 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-11T17:52:06.828+02:00  INFO 3364 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-11T17:52:06.842+02:00  INFO 3364 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T17:52:06.842+02:00  INFO 3364 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T17:52:06.883+02:00  INFO 3364 --- [spring-boot1] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-04-11T17:52:06.884+02:00  INFO 3364 --- [spring-boot1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1016 ms
+2025-04-11T17:52:07.249+02:00  INFO 3364 --- [spring-boot1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-11T17:52:07.283+02:00  INFO 3364 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-04-11T17:52:07.292+02:00  INFO 3364 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 1.937 seconds (process running for 2.349)
+2025-04-11T17:54:08.903+02:00  INFO 3364 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-11T17:54:08.910+02:00  INFO 3364 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-11T17:54:11.877+02:00  INFO 17808 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Starting SpringBoot1Application using Java 21.0.3 with PID 17808 (C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes started by amjpa in C:\Users\amjpa\IdeaProjects\spring-boot1)
+2025-04-11T17:54:11.879+02:00  INFO 17808 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T17:54:11.936+02:00  INFO 17808 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-11T17:54:11.936+02:00  INFO 17808 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-11T17:54:12.911+02:00  INFO 17808 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-11T17:54:12.930+02:00  INFO 17808 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T17:54:12.930+02:00  INFO 17808 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T17:54:12.977+02:00  INFO 17808 --- [spring-boot1] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-04-11T17:54:12.977+02:00  INFO 17808 --- [spring-boot1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
+2025-04-11T17:54:13.368+02:00  INFO 17808 --- [spring-boot1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-11T17:54:13.411+02:00  INFO 17808 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-04-11T17:54:13.419+02:00  INFO 17808 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 1.995 seconds (process running for 2.407)
+2025-04-11T17:59:42.142+02:00  INFO 17808 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-11T17:59:42.149+02:00  INFO 17808 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
