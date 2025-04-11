@@ -1,5 +1,6 @@
 package com.alejandromj.spring_boot1;
 
+import com.alejandromj.spring_boot1.models.PowerStone;
 import com.alejandromj.spring_boot1.services.GuantletService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -11,12 +12,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBoot1Application implements CommandLineRunner {
 
     //En @Value se usa $ para llamar a variables y # para métodos.
-    @Value(value = "${spring.application.name;default-value}")
-private String value ;
+    @Value(value = "${spring.application.name:default-value}")
+    private String value ;
+
+
+    @Autowired
+    private PowerStone powerStone;
 
 //----------------------------------------------------------------------------------------------------------------------
 
-	@Autowired
+	//@Autowired
 
 	//Implemento la clase que extiende de la interfaz así, porque solo tengo una, en caso de haber más es necesario
 	//marcar la principal con @Primary.
@@ -33,6 +38,7 @@ private String value ;
     public void run(String... args) throws Exception {
 
         System.out.println(value);
+        System.out.println(powerStone);
     }
 
 
