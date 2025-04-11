@@ -3,11 +3,18 @@ package com.alejandromj.spring_boot1.configs;
 
 import com.alejandromj.spring_boot1.models.*;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.*;
 
 @Configuration
+//@PropertySource("classpath:configs/stone.properties")   //extiendo stone.properties para poder inicializar los beans
+@PropertySources({
+        @PropertySource("classpath:configs/stone.properties"),
+        @PropertySource("classpath:configs/mind_stone.properties"),
+        @PropertySource("classpath:configs/power_stone.properties"),
+        @PropertySource("classpath:configs/reality_stone.properties"),
+        @PropertySource("classpath:configs/soul_stone.properties"),
+        @PropertySource("classpath:configs/time_stone.properties")
+        })
 public class StoneConfigs {
 
     //Los métodos tienen que ser públicos.

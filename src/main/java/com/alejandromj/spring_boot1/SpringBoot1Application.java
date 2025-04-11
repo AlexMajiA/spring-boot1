@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
-@PropertySource("classpath:configs/stone.properties")   //extiendo stone.properties para poder inicializar los beans
+
 public class SpringBoot1Application implements CommandLineRunner {
 
     //En @Value se usa $ para llamar a variables y # para métodos.

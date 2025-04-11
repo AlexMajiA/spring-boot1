@@ -7,17 +7,11 @@ import lombok.extern.java.Log;
 @Log
 public class SpaceStone extends Stone {
 
-    //Variables constantes.
-    private static final String COLOR = "Blue";
-    private static final String NAME = "Space Stone";
-    private static final String LOCATION = "Tesseract";
-    private static final int ENERGY_lEVEL = 7;
-
 
     public SpaceStone() {
 
         //SUPER = Se refiere al constructor del padre.
-        super(COLOR, NAME, LOCATION, ENERGY_lEVEL);
+        super();
     }
 
     @Override

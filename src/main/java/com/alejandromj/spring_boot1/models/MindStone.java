@@ -14,14 +14,10 @@ import lombok.extern.java.Log;
 @Log
 public class MindStone extends Stone{
 
-    //Constantes.
-    private static final String COLOR = "Yellow";
-    private static final String NAME = "Mind Stone";
-    private static final String LOCATION = "Scepter";
-    private static final int ENERGY_lEVEL = 4;
+
 
     public MindStone() {
-        super(COLOR, NAME, LOCATION, ENERGY_lEVEL);
+        super();
     }
 
     @Override

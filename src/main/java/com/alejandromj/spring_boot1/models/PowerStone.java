@@ -7,14 +7,9 @@ import lombok.extern.java.Log;
 @Log
 public class PowerStone extends Stone {
 
-    //Constantes.
-    private static final String COLOR = "Purple";
-    private static final String NAME = "Power Stone";
-    private static final String LOCATION = "Nova Corps";
-    private static final int ENERGY_lEVEL = 10;
-
     public PowerStone() {
-        super(COLOR, NAME, LOCATION, ENERGY_lEVEL);
+
+        super();
     }
 
     @Override

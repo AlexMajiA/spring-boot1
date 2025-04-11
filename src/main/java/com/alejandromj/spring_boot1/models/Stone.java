@@ -1,9 +1,6 @@
 package com.alejandromj.spring_boot1.models;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.io.Serializable;
 
@@ -21,6 +18,7 @@ import java.io.Serializable;
  * guardar en archivos, enviar por red o clonar).
  */
 
+@NoArgsConstructor
 @Getter
 @Setter
 @EqualsAndHashCode
