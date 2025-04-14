@@ -8,9 +8,13 @@ import lombok.extern.java.Log;
 public class SoulStone extends Stone{
 
 
-    public SoulStone() {
-
-        super();
+    public SoulStone(
+            String colorProperty,
+            String nameProperty,
+            String locationProperty,
+            Integer energyLevelProperty
+    ) {
+        super(colorProperty, nameProperty, locationProperty, energyLevelProperty);
     }
 
     @Override

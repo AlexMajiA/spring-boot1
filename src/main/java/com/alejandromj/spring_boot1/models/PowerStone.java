@@ -7,11 +7,14 @@ import lombok.extern.java.Log;
 @Log
 public class PowerStone extends Stone {
 
-    public PowerStone() {
-
-        super();
+    public PowerStone(
+            String colorProperty,
+            String nameProperty,
+            String locationProperty,
+            Integer energyLevelProperty
+    ) {
+        super(colorProperty, nameProperty, locationProperty, energyLevelProperty);
     }
-
     @Override
 
     public void usePower() {

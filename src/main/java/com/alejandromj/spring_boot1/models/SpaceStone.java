@@ -8,10 +8,13 @@ import lombok.extern.java.Log;
 public class SpaceStone extends Stone {
 
 
-    public SpaceStone() {
-
-        //SUPER = Se refiere al constructor del padre.
-        super();
+    public SpaceStone(
+            String colorProperty,
+            String nameProperty,
+            String locationProperty,
+            Integer energyLevelProperty
+    ) {
+        super(colorProperty, nameProperty, locationProperty, energyLevelProperty);
     }
 
     @Override

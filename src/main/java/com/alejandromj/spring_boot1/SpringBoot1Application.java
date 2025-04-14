@@ -1,8 +1,10 @@
 package com.alejandromj.spring_boot1;
 
 import com.alejandromj.spring_boot1.models.PowerStone;
+import com.alejandromj.spring_boot1.models.Stone;
 import com.alejandromj.spring_boot1.services.GuantletService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -13,6 +15,33 @@ import org.springframework.context.annotation.PropertySource;
 
 public class SpringBoot1Application implements CommandLineRunner {
 
+    @Autowired
+    @Qualifier(value = "mind")
+    private Stone mindStone;
+
+    @Autowired
+    @Qualifier(value = "power")
+    private Stone powerStone;
+
+    @Autowired
+    @Qualifier(value = "reality")
+    private Stone realityStone;
+
+    @Autowired
+    @Qualifier(value = "soul")
+    private Stone soulStone;
+
+    @Autowired
+    @Qualifier(value = "space")
+    private Stone spaceStone;
+
+    @Autowired
+    @Qualifier(value = "time")
+    private Stone timeStone;
+
+
+//----------------------------------------------------------------------------------------------------------------------
+ /*
     //En @Value se usa $ para llamar a variables y # para métodos.
     @Value(value = "${spring.application.name:default-value}")
         private String value ;
@@ -21,7 +50,7 @@ public class SpringBoot1Application implements CommandLineRunner {
         private boolean mindEneable;
     @Autowired
         private PowerStone powerStone;
-
+*/
 //----------------------------------------------------------------------------------------------------------------------
 
 	//@Autowired
@@ -32,17 +61,21 @@ public class SpringBoot1Application implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBoot1Application.class, args);
-
-
-
 	}
 
     @Override
     public void run(String... args) throws Exception {
 
-        System.out.println(value);
-        System.out.println(powerStone);
-        System.out.println(mindEneable);
+      //  System.out.println(value);
+      //  System.out.println(powerStone);
+      //  System.out.println(mindEneable);
+
+        System.out.println(this.mindStone.toString());
+        System.out.println(this.powerStone.toString());
+        System.out.println(this.realityStone.toString());
+        System.out.println(this.soulStone.toString());
+        System.out.println(this.spaceStone.toString());
+        System.out.println(this.timeStone.toString());
     }
 
 

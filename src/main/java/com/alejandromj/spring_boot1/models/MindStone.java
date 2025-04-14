@@ -15,9 +15,13 @@ import lombok.extern.java.Log;
 public class MindStone extends Stone{
 
 
-
-    public MindStone() {
-        super();
+    public MindStone(
+            String colorProperty,
+            String nameProperty,
+            String locationProperty,
+            Integer energyLevelProperty
+    ) {
+        super(colorProperty, nameProperty, locationProperty, energyLevelProperty);
     }
 
     @Override

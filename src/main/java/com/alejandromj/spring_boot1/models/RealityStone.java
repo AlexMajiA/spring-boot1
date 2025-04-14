@@ -7,8 +7,13 @@ import lombok.extern.java.Log;
 @Log
 public class RealityStone extends Stone{
 
-    public RealityStone() {
-        super();
+    public RealityStone(
+            String colorProperty,
+            String nameProperty,
+            String locationProperty,
+            Integer energyLevelProperty
+    ) {
+        super(colorProperty, nameProperty, locationProperty, energyLevelProperty);
     }
 
     @Override

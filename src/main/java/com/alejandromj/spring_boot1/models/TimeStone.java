@@ -7,9 +7,13 @@ import lombok.extern.java.Log;
 @Log
 public class TimeStone extends Stone{
 
-    public TimeStone() {
-
-        super();
+    public TimeStone(
+            String colorProperty,
+            String nameProperty,
+            String locationProperty,
+            Integer energyLevelProperty
+    ) {
+        super(colorProperty, nameProperty, locationProperty, energyLevelProperty);
     }
 
     @Override
