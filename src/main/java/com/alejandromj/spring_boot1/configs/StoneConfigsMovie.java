@@ -2,7 +2,6 @@ package com.alejandromj.spring_boot1.configs;
 
 
 import com.alejandromj.spring_boot1.models.*;
-import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -10,10 +9,10 @@ import org.springframework.context.annotation.*;
 
 @Slf4j
 @Configuration
-@Profile("default")
+@Profile("movie")
 //@PropertySource("classpath:configs/stone.properties")   //extiendo stone.properties para poder inicializar los beans
 @PropertySources({
-        @PropertySource("classpath:configs/stone.properties"),
+        @PropertySource("classpath:configs/stone-movie.properties"),
         @PropertySource("classpath:configs/mind_stone.properties"),
         @PropertySource("classpath:configs/power_stone.properties"),
         @PropertySource("classpath:configs/reality_stone.properties"),
@@ -21,7 +20,7 @@ import org.springframework.context.annotation.*;
         @PropertySource("classpath:configs/space_stone.properties"),
         @PropertySource("classpath:configs/time_stone.properties")
         })
-public class StoneConfigs {
+public class StoneConfigsMovie {
 
     @Value("${subtitles.url}") private String subtitlesUrl;
     @Value("${spring.profiles.active:default}") private String profile;
@@ -61,11 +60,6 @@ public class StoneConfigs {
     @Value("${stone.time.name}") private String nameTime;
     @Value("${stone.time.location}") private String locationTime;
     @Value("${stone.time.energy-level}")private Integer energyTime;
-
-    @PostConstruct
-    public void init(){
-        log.info("Loading subtitles: {}, with profile: {}", this.subtitlesUrl, profile);
-    }
 
     //Los métodos tienen que ser públicos.
     @Bean(name = "mind")

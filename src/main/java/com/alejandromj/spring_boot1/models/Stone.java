@@ -13,7 +13,7 @@ import java.io.Serializable;
  * Anotaciones Lombok:
  * @Getter, @Setter: genera automáticamente los métodos get y set para todos los atributos.
  * @EqualsAndHashCode: genera equals() y hashCode() basados en todos los campos de la clase.
- * @ToString: genera un método toString() con los valores de los atributos.
+ * @ToString: genera un metodo toString() con los valores de los atributos.
  * Serializable: permite que los objetos Stone puedan convertirse en una secuencia de bytes (importante si los quieres
  * guardar en archivos, enviar por red o clonar).
  */
