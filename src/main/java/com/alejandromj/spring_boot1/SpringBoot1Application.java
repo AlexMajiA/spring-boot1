@@ -1,5 +1,6 @@
 package com.alejandromj.spring_boot1;
 
+import com.alejandromj.spring_boot1.components.Thanos;
 import com.alejandromj.spring_boot1.models.PowerStone;
 import com.alejandromj.spring_boot1.models.Stone;
 import com.alejandromj.spring_boot1.services.GuantletService;
@@ -15,6 +16,17 @@ import org.springframework.context.annotation.PropertySource;
 
 public class SpringBoot1Application implements CommandLineRunner {
 
+    @Autowired
+    private Thanos thanos;
+
+
+
+
+
+
+//----------------------------------------------------------------------------------------------------------------------
+
+    /*
     @Autowired
     @Qualifier(value = "mind")
     private Stone mindStone;
@@ -38,7 +50,7 @@ public class SpringBoot1Application implements CommandLineRunner {
     @Autowired
     @Qualifier(value = "time")
     private Stone timeStone;
-
+*/
 
 //----------------------------------------------------------------------------------------------------------------------
  /*
@@ -66,16 +78,22 @@ public class SpringBoot1Application implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
+    thanos.snap();
+
+
+
       //  System.out.println(value);
       //  System.out.println(powerStone);
       //  System.out.println(mindEneable);
-
+    /*
         System.out.println(this.mindStone.toString());
         System.out.println(this.powerStone.toString());
         System.out.println(this.realityStone.toString());
         System.out.println(this.soulStone.toString());
         System.out.println(this.spaceStone.toString());
         System.out.println(this.timeStone.toString());
+
+     */
     }
 
 

@@ -68,3 +68,5 @@
 2025-04-15T11:28:42.077+02:00  INFO 6860 --- [spring-boot1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2025-04-15T11:28:42.112+02:00  INFO 6860 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/movie-stones'
 2025-04-15T11:28:42.121+02:00  INFO 6860 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 2.049 seconds (process running for 2.509)
+2025-04-15T11:29:44.056+02:00  INFO 6860 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-15T11:29:44.062+02:00  INFO 6860 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

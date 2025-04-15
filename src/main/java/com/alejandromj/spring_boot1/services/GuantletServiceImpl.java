@@ -1,12 +1,14 @@
 package com.alejandromj.spring_boot1.services;
 
-import com.alejandromj.spring_boot1.models.Stone;
+import com.alejandromj.spring_boot1.models.*;
 import lombok.Getter;
 import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -20,10 +22,21 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-//@ConditionalOnProperty
-@Log
-@Getter
 @Slf4j
+@Getter
+@Primary
+@ConditionalOnBean(value = {
+        MindStone.class,
+        PowerStone.class,
+        RealityStone.class,
+        SoulStone.class,
+        SpaceStone.class,
+        TimeStone.class
+})
+//@ConditionalOnProperty
+//@Log
+
+
 
 public class GuantletServiceImpl implements GuantletService {
 
