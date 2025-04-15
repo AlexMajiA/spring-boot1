@@ -1,23 +1,29 @@
 package com.alejandromj.spring_boot1.components;
 
 
+import com.alejandromj.spring_boot1.models.ThanosModel;
 import com.alejandromj.spring_boot1.services.GuantletService;
 import com.github.javafaker.Faker;
+import jakarta.annotation.PostConstruct;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class Thanos {
+@ConfigurationProperties(prefix = "thanos.config")
+@AllArgsConstructor
+public class ThanosComponent {
 
     private final GuantletService guantletService;
+    private final ThanosModel thanosModel;
 
-    @Autowired // es opcional porque ya tiene inyección de dependencias por Spring.
-    public Thanos(GuantletService guantletService) {
-        this.guantletService = guantletService;
+    @PostConstruct
+    public void init(){
+        log.info("Loading Thanos configs: {}", thanosModel);
     }
-
 
     public void snap(){
         // Instancio la clase Faker para pruebas.

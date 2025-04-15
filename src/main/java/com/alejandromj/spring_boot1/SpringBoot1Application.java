@@ -1,26 +1,23 @@
 package com.alejandromj.spring_boot1;
 
-import com.alejandromj.spring_boot1.components.Thanos;
-import com.alejandromj.spring_boot1.models.PowerStone;
-import com.alejandromj.spring_boot1.models.Stone;
-import com.alejandromj.spring_boot1.services.GuantletService;
+import com.alejandromj.spring_boot1.components.ThanosComponent;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 
 public class SpringBoot1Application implements CommandLineRunner {
 
+
+
+
+
+//----------------------------------------------------------------------------------------------------------------------
+
     @Autowired
-    private Thanos thanos;
-
-
-
+    private ThanosComponent thanos;
 
 
 
