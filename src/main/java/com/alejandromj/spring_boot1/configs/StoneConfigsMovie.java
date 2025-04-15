@@ -2,6 +2,7 @@ package com.alejandromj.spring_boot1.configs;
 
 
 import com.alejandromj.spring_boot1.models.*;
+import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -60,6 +61,12 @@ public class StoneConfigsMovie {
     @Value("${stone.time.name}") private String nameTime;
     @Value("${stone.time.location}") private String locationTime;
     @Value("${stone.time.energy-level}")private Integer energyTime;
+
+    @PostConstruct
+    public void init(){
+        log.info("Loading subtitles: {}, with profile: {}", this.subtitlesUrl, profile);
+    }
+
 
     //Los métodos tienen que ser públicos.
     @Bean(name = "mind")
