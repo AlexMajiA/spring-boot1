@@ -730,3 +730,20 @@ Update your configuration so that ThanosModel is defined via @ConfigurationPrope
 2025-04-15T13:16:44.272+02:00  INFO 18152 --- [spring-boot1] [restartedMain] c.a.s.components.ThanosComponent         : Thanos is get make danger points 876
 2025-04-15T13:22:17.510+02:00  INFO 18152 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
 2025-04-15T13:22:17.516+02:00  INFO 18152 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-15T13:22:20.825+02:00  INFO 9884 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Starting SpringBoot1Application using Java 21.0.3 with PID 9884 (C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes started by amjpa in C:\Users\amjpa\IdeaProjects\spring-boot1)
+2025-04-15T13:22:20.827+02:00  INFO 9884 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : No active profile set, falling back to 1 default profile: "default"
+2025-04-15T13:22:20.882+02:00  INFO 9884 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-15T13:22:20.882+02:00  INFO 9884 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-15T13:22:22.008+02:00  INFO 9884 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-15T13:22:22.023+02:00  INFO 9884 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-15T13:22:22.024+02:00  INFO 9884 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-15T13:22:22.059+02:00  INFO 9884 --- [spring-boot1] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-04-15T13:22:22.059+02:00  INFO 9884 --- [spring-boot1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1175 ms
+2025-04-15T13:22:22.121+02:00  INFO 9884 --- [spring-boot1] [restartedMain] c.a.spring_boot1.configs.StoneConfigs    : Loading subtitles: http://default.xyz, with profile: default
+2025-04-15T13:22:22.133+02:00  INFO 9884 --- [spring-boot1] [restartedMain] c.a.s.components.ThanosComponent         : Loading Thanos configs: ThanosModel(planet=pito, galaxy=Andromeda, defaultDestructionLevel=788)
+2025-04-15T13:22:22.447+02:00  INFO 9884 --- [spring-boot1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-15T13:22:22.482+02:00  INFO 9884 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-04-15T13:22:22.490+02:00  INFO 9884 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 2.148 seconds (process running for 2.567)
+2025-04-15T13:22:22.613+02:00  INFO 9884 --- [spring-boot1] [restartedMain] c.a.s.components.ThanosComponent         : Thanos is using the gauntlet to perform snap in Syrian Arab Republic
+2025-04-15T13:22:22.613+02:00  INFO 9884 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : USING ALL POWER
+2025-04-15T13:22:22.613+02:00  INFO 9884 --- [spring-boot1] [restartedMain] c.a.s.components.ThanosComponent         : Thanos is get make danger points 580
