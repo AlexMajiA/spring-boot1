@@ -1,8 +1,9 @@
 package com.alejandromj.spring_boot1.services;
 
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.EnvironmentAware;
 
-public interface GuantletService extends ApplicationContextAware {
+public interface GuantletService extends ApplicationContextAware, EnvironmentAware {
 
 void useGuantlet(String stoneName);
 

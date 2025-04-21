@@ -15,6 +15,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Primary;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -132,6 +133,16 @@ public  void init(){
 
         if (stones.length <6){
             throw new IllegalStateException("Cant create Guantlet");
+        }
+    }
+
+    @Override
+    public void setEnvironment(Environment environment) {
+
+        if (environment.getProperty("location").equals("Asgard")){
+            throw new IllegalStateException("Guantlet can be in Asgard");
+        }else {
+            log.info("Gauntlet create in correct location");
         }
     }
 }

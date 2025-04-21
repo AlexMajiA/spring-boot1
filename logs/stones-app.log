@@ -322,3 +322,103 @@
 2025-04-21T20:12:45.605+02:00  INFO 14468 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
 2025-04-21T20:12:45.608+02:00  WARN 14468 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.components.Thanos       : BATTLE END
 2025-04-21T20:12:45.608+02:00  INFO 14468 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.utils.AvengerNotifier   : Gauntlet was destroyed
+2025-04-21T20:52:30.772+02:00  INFO 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Starting SpringBoot1Application using Java 21.0.3 with PID 5680 (C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes started by amjpa in C:\Users\amjpa\IdeaProjects\spring-boot1)
+2025-04-21T20:52:30.775+02:00  INFO 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : No active profile set, falling back to 1 default profile: "default"
+2025-04-21T20:52:30.834+02:00  INFO 5680 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-21T20:52:30.835+02:00  INFO 5680 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-21T20:52:31.869+02:00  INFO 5680 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-21T20:52:31.884+02:00  INFO 5680 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-21T20:52:31.884+02:00  INFO 5680 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21T20:52:31.922+02:00  INFO 5680 --- [spring-boot1] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-04-21T20:52:31.922+02:00  INFO 5680 --- [spring-boot1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1087 ms
+2025-04-21T20:52:31.986+02:00  INFO 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.configs.StoneConfigs    : Loading subtitles: http://default.xyz, with profile: default
+2025-04-21T20:52:31.990+02:00  WARN 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.MindStone
+2025-04-21T20:52:31.991+02:00  WARN 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.PowerStone
+2025-04-21T20:52:31.992+02:00  WARN 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.RealityStone
+2025-04-21T20:52:31.993+02:00  WARN 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SoulStone
+2025-04-21T20:52:31.994+02:00  WARN 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SpaceStone
+2025-04-21T20:52:31.994+02:00  WARN 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.TimeStone
+2025-04-21T20:52:31.996+02:00  INFO 5680 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Gauntlet located: Asgard
+2025-04-21T20:52:31.997+02:00  INFO 5680 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Active stones active [mind, power, reality, soul, space, time]
+2025-04-21T20:52:31.998+02:00  WARN 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.services.GuantletServiceImpl
+2025-04-21T20:52:31.998+02:00  WARN 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.components.Thanos
+2025-04-21T20:52:31.999+02:00  WARN 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : DANGER START BATTLE!!!
+2025-04-21T20:52:32.003+02:00  INFO 5680 --- [spring-boot1] [restartedMain] c.a.s.components.ThanosComponent         : Loading Thanos configs: ThanosModel(planet=Titán, galaxy=Andromeda, defaultDestructionLevel=788)
+2025-04-21T20:52:32.338+02:00  INFO 5680 --- [spring-boot1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-21T20:52:32.380+02:00  INFO 5680 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-04-21T20:52:32.387+02:00  INFO 5680 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 2.084 seconds (process running for 2.483)
+2025-04-21T20:54:36.930+02:00  INFO 5680 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-21T20:54:36.935+02:00  INFO 5680 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-21T20:54:36.938+02:00  WARN 5680 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.components.Thanos       : BATTLE END
+2025-04-21T20:54:36.938+02:00  INFO 5680 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.utils.AvengerNotifier   : Gauntlet was destroyed
+2025-04-21T20:54:41.400+02:00  INFO 7560 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Starting SpringBoot1Application using Java 21.0.3 with PID 7560 (C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes started by amjpa in C:\Users\amjpa\IdeaProjects\spring-boot1)
+2025-04-21T20:54:41.402+02:00  INFO 7560 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : No active profile set, falling back to 1 default profile: "default"
+2025-04-21T20:54:41.457+02:00  INFO 7560 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-21T20:54:41.458+02:00  INFO 7560 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-21T20:54:42.547+02:00  INFO 7560 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-21T20:54:42.560+02:00  INFO 7560 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-21T20:54:42.560+02:00  INFO 7560 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21T20:54:42.596+02:00  INFO 7560 --- [spring-boot1] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-04-21T20:54:42.597+02:00  INFO 7560 --- [spring-boot1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1139 ms
+2025-04-21T20:54:42.661+02:00  INFO 7560 --- [spring-boot1] [restartedMain] c.a.spring_boot1.configs.StoneConfigs    : Loading subtitles: http://default.xyz, with profile: default
+2025-04-21T20:54:42.664+02:00  WARN 7560 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.MindStone
+2025-04-21T20:54:42.667+02:00  WARN 7560 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.PowerStone
+2025-04-21T20:54:42.668+02:00  WARN 7560 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.RealityStone
+2025-04-21T20:54:42.669+02:00  WARN 7560 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SoulStone
+2025-04-21T20:54:42.670+02:00  WARN 7560 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SpaceStone
+2025-04-21T20:54:42.671+02:00  WARN 7560 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.TimeStone
+2025-04-21T20:54:42.674+02:00  WARN 7560 --- [spring-boot1] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'thanos' defined in file [C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes\com\alejandromj\spring_boot1\components\Thanos.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'guantletServiceImpl' defined in file [C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes\com\alejandromj\spring_boot1\services\GuantletServiceImpl.class]: Guantlet can be in Asgard
+2025-04-21T20:54:42.677+02:00  INFO 7560 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-21T20:54:42.691+02:00  INFO 7560 --- [spring-boot1] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-21T20:54:42.710+02:00 ERROR 7560 --- [spring-boot1] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'thanos' defined in file [C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes\com\alejandromj\spring_boot1\components\Thanos.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'guantletServiceImpl' defined in file [C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes\com\alejandromj\spring_boot1\services\GuantletServiceImpl.class]: Guantlet can be in Asgard
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.4.jar:3.4.4]
+	at com.alejandromj.spring_boot1.SpringBoot1Application.main(SpringBoot1Application.java:72) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.4.jar:3.4.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'guantletServiceImpl' defined in file [C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes\com\alejandromj\spring_boot1\services\GuantletServiceImpl.class]: Guantlet can be in Asgard
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1667) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Guantlet can be in Asgard
+	at com.alejandromj.spring_boot1.services.GuantletServiceImpl.setEnvironment(GuantletServiceImpl.java:143) ~[classes/:na]
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:92) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:85) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:423) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 34 common frames omitted
+
