@@ -36,7 +36,7 @@ public class StoneController {
     //Este metodo devuelve la gema inyectada, asumiendo que es de tipo PowerStone.
     @GetMapping
     public PowerStone powerStone() {
-    return (PowerStone) this.stone;     //Convierte (cast) la variable stone a PowerStone.
+        return (PowerStone) this.stone;     //Convierte (cast) la variable stone a PowerStone.
 
     }
 
