@@ -1,0 +1,29 @@
+package com.alejandromj.spring_boot1.components;
+
+
+import com.alejandromj.spring_boot1.services.GuantletService;
+import com.alejandromj.spring_boot1.utils.AvengerNotifier;
+import jakarta.annotation.PostConstruct;
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
+
+@Component
+@AllArgsConstructor
+@Slf4j
+
+public class Thanos {
+
+    private final GuantletService guantletService;
+
+    @PostConstruct
+        public void init(){
+            AvengerNotifier.sendNotification(this.getClass());
+        }
+
+
+        public void snap(){
+            log.info("Thanos snap");
+            this.guantletService.useFullPower();
+        }
+}

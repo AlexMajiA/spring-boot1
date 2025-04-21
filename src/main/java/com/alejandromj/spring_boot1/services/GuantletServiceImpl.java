@@ -1,6 +1,8 @@
 package com.alejandromj.spring_boot1.services;
 
 import com.alejandromj.spring_boot1.models.*;
+import com.alejandromj.spring_boot1.utils.AvengerNotifier;
+import jakarta.annotation.PostConstruct;
 import lombok.Getter;
 import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
@@ -25,6 +27,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Getter
 @Primary
+//Eager
 @ConditionalOnBean(value = {
         MindStone.class,
         PowerStone.class,
@@ -68,6 +71,12 @@ public class GuantletServiceImpl implements GuantletService {
         this.time = time;
     }
 
+    //Los metodos @PostConstrct deben ser void ya que se utilizan para ejecutar algo en segundo plano.
+    //No se utilizan para devolver tipos de datos.
+@PostConstruct
+public  void init(){
+    AvengerNotifier.sendNotification(this.getClass());
+}
 
     @Override
     public void useGuantlet(String stoneName) {

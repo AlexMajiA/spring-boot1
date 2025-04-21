@@ -15,10 +15,10 @@ public class SpringBoot1Application implements CommandLineRunner {
 
 
 //----------------------------------------------------------------------------------------------------------------------
-
+/*
     @Autowired
     private ThanosComponent thanos;
-
+*/
 
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -75,13 +75,18 @@ public class SpringBoot1Application implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-    thanos.snap();
+
+//----------------------------------------------------------------------------------------------------------------------
+
+        //thanos.snap();
 
 
 
       //  System.out.println(value);
       //  System.out.println(powerStone);
       //  System.out.println(mindEneable);
+
+//----------------------------------------------------------------------------------------------------------------------
     /*
         System.out.println(this.mindStone.toString());
         System.out.println(this.powerStone.toString());
@@ -92,7 +97,7 @@ public class SpringBoot1Application implements CommandLineRunner {
 
      */
     }
-
+//----------------------------------------------------------------------------------------------------------------------
 
 /*
 	@Override
