@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 @AllArgsConstructor
 @Slf4j
-@Lazy
+//@Lazy
 
 public class Thanos {
 

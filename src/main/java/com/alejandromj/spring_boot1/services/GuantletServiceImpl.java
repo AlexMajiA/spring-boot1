@@ -7,13 +7,18 @@ import jakarta.annotation.PreDestroy;
 import lombok.Getter;
 import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+
+import java.util.Arrays;
 
 
 /**
@@ -24,11 +29,12 @@ import org.springframework.stereotype.Service;
  * @Qualifier("..."): Le especifica cuál de los beans de tipo Stone debe usar.
  */
 
-@Service
+@Service  //Las AdwareInterface se pueden utilizar con @Component, @Repository, @Controller o RestController.
 @Slf4j
 @Getter
 @Primary
-//Eager
+
+/*
 @ConditionalOnBean(value = {
         MindStone.class,
         PowerStone.class,
@@ -37,12 +43,13 @@ import org.springframework.stereotype.Service;
         SpaceStone.class,
         TimeStone.class
 })
+ */
 //@ConditionalOnProperty
 //@Log
 
 
 
-public class GuantletServiceImpl implements GuantletService {
+public class GuantletServiceImpl implements GuantletService{
 
     //@Autowired = inyección de dependencias (DI)
 
@@ -112,4 +119,19 @@ public  void init(){
         AvengerNotifier.sendNotification("Gauntlet was destroyed");
     }
 
+    /**
+     * applicationContext es el contexto de la aplicación que incluye todos los beans al implementar la interfaz.
+     * @param applicationContext
+     * @throws BeansException
+     */
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        final var stones = applicationContext.getBeanNamesForType(Stone.class);
+        log.info("Active stones active {}", Arrays.toString(stones));
+
+        if (stones.length <6){
+            throw new IllegalStateException("Cant create Guantlet");
+        }
+    }
 }

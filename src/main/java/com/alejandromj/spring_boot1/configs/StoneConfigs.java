@@ -70,7 +70,7 @@ public class StoneConfigs {
     //Los métodos tienen que ser públicos.
     @Bean(name = "mind", initMethod = "sendMind")
     //@Scope("prototype")
-    @Lazy   //Solo crea el beans cuando es necesario. Eager por defecto los crea todos al iniciar el programa.
+    //@Lazy   //Solo crea el beans cuando es necesario. Eager por defecto los crea todos al iniciar el programa.
     @ConditionalOnProperty(name = "stones.mind.enabled", havingValue = "true")
     public MindStone mindStone(){
         return new MindStone(colorMind, nameMind, locationMind, energyMind);
@@ -79,7 +79,7 @@ public class StoneConfigs {
     //Los métodos tienen que ser públicos.
     @Bean(name = "power", initMethod = "sendPower")
     //@Scope("prototype")
-    @Lazy   //Solo crea el beans cuando es necesario. Eager por defecto los crea todos al iniciar el programa.
+    //@Lazy   //Solo crea el beans cuando es necesario. Eager por defecto los crea todos al iniciar el programa.
     @ConditionalOnProperty(name = "stones.power.enabled", havingValue = "true")
     public PowerStone powerStone(){
         return new PowerStone(colorPower, namePower, locationPower, energyPower);
@@ -88,7 +88,7 @@ public class StoneConfigs {
     //Los métodos tienen que ser públicos.
     @Bean(name = "reality", initMethod = "sendReality")
     //@Scope("prototype")
-    @Lazy   //Solo crea el beans cuando es necesario. Eager por defecto los crea todos al iniciar el programa.
+    //@Lazy   //Solo crea el beans cuando es necesario. Eager por defecto los crea todos al iniciar el programa.
     @ConditionalOnProperty(name = "stones.reality.enabled", havingValue = "true")
     public RealityStone realityStone(){
         return new RealityStone(colorReality, nameReality, locationReality, energyReality);
@@ -97,7 +97,7 @@ public class StoneConfigs {
     //Los métodos tienen que ser públicos.
     @Bean(name = "soul", initMethod = "sendSoul")
     //@Scope("prototype")
-    @Lazy   //Solo crea el beans cuando es necesario. Eager por defecto los crea todos al iniciar el programa.
+    //@Lazy   //Solo crea el beans cuando es necesario. Eager por defecto los crea todos al iniciar el programa.
     @ConditionalOnProperty(name = "stones.soul.enabled", havingValue = "true")
     public SoulStone soulStone(){
         return new SoulStone(colorSoul, nameSoul, locationSoul, energySoul);
@@ -106,7 +106,7 @@ public class StoneConfigs {
     //Los métodos tienen que ser públicos.
     @Bean(name = "space", initMethod = "sendSpace")
     //@Scope("prototype")
-    @Lazy   //Solo crea el beans cuando es necesario. Eager por defecto los crea todos al iniciar el programa.
+    //@Lazy   //Solo crea el beans cuando es necesario. Eager por defecto los crea todos al iniciar el programa.
     @ConditionalOnProperty(name = "stones.space.enabled", havingValue = "true")
     public SpaceStone spaceStone(){
         return new SpaceStone(colorSpace, nameSpace, locationSpace, energySpace);
@@ -115,7 +115,7 @@ public class StoneConfigs {
     //Los métodos tienen que ser públicos.
     @Bean(name = "time", initMethod = "sendTime")
     //@Scope("prototype")
-    @Lazy   //Solo crea el beans cuando es necesario. Eager por defecto los crea todos al iniciar el programa.
+    //@Lazy   //Solo crea el beans cuando es necesario. Eager por defecto los crea todos al iniciar el programa.
     @ConditionalOnProperty(name = "stones.time.enabled")
     public TimeStone timeStone(){
         return new TimeStone(colorTime, nameTime, locationTime, energyTime);
