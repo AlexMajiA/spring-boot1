@@ -3,6 +3,7 @@ package com.alejandromj.spring_boot1.services;
 import com.alejandromj.spring_boot1.models.*;
 import com.alejandromj.spring_boot1.utils.AvengerNotifier;
 import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import lombok.Getter;
 import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
@@ -104,6 +105,11 @@ public  void init(){
         } else {
             throw new IllegalStateException("Cant be using full power because service have field null");
         }
+    }
+
+    @PreDestroy
+    public void destroy(){
+        AvengerNotifier.sendNotification("Gauntlet was destroyed");
     }
 
 }

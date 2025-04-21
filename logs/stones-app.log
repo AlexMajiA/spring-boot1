@@ -109,3 +109,58 @@
 2025-04-21T18:31:07.358+02:00  INFO 19208 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 2.026 seconds (process running for 2.426)
 2025-04-21T18:31:39.758+02:00  INFO 19208 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
 2025-04-21T18:31:39.764+02:00  INFO 19208 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-21T18:35:08.047+02:00  INFO 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Starting SpringBoot1Application using Java 21.0.3 with PID 18464 (C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes started by amjpa in C:\Users\amjpa\IdeaProjects\spring-boot1)
+2025-04-21T18:35:08.049+02:00  INFO 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : No active profile set, falling back to 1 default profile: "default"
+2025-04-21T18:35:08.102+02:00  INFO 18464 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-21T18:35:08.102+02:00  INFO 18464 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-21T18:35:09.143+02:00  INFO 18464 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-21T18:35:09.157+02:00  INFO 18464 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-21T18:35:09.157+02:00  INFO 18464 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21T18:35:09.191+02:00  INFO 18464 --- [spring-boot1] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-04-21T18:35:09.191+02:00  INFO 18464 --- [spring-boot1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1088 ms
+2025-04-21T18:35:09.256+02:00  INFO 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.configs.StoneConfigs    : Loading subtitles: http://default.xyz, with profile: default
+2025-04-21T18:35:09.261+02:00  WARN 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.MindStone
+2025-04-21T18:35:09.262+02:00  WARN 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.PowerStone
+2025-04-21T18:35:09.263+02:00  WARN 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.RealityStone
+2025-04-21T18:35:09.264+02:00  WARN 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SoulStone
+2025-04-21T18:35:09.264+02:00  WARN 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SpaceStone
+2025-04-21T18:35:09.265+02:00  WARN 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.TimeStone
+2025-04-21T18:35:09.267+02:00  WARN 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.services.GuantletServiceImpl
+2025-04-21T18:35:09.267+02:00  WARN 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.components.Thanos
+2025-04-21T18:35:09.269+02:00  WARN 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : DANGER START BATTLE!!!
+2025-04-21T18:35:09.271+02:00  INFO 18464 --- [spring-boot1] [restartedMain] c.a.s.components.ThanosComponent         : Loading Thanos configs: ThanosModel(planet=Titán, galaxy=Andromeda, defaultDestructionLevel=788)
+2025-04-21T18:35:09.274+02:00  WARN 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.PowerStone
+2025-04-21T18:35:09.613+02:00  INFO 18464 --- [spring-boot1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-21T18:35:09.652+02:00  INFO 18464 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-04-21T18:35:09.663+02:00  INFO 18464 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 2.066 seconds (process running for 2.469)
+2025-04-21T18:35:23.541+02:00  INFO 18464 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-21T18:35:23.547+02:00  INFO 18464 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-21T18:35:23.550+02:00  WARN 18464 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.components.Thanos       : BATTLE END
+2025-04-21T18:38:29.902+02:00  INFO 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Starting SpringBoot1Application using Java 21.0.3 with PID 4060 (C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes started by amjpa in C:\Users\amjpa\IdeaProjects\spring-boot1)
+2025-04-21T18:38:29.905+02:00  INFO 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : No active profile set, falling back to 1 default profile: "default"
+2025-04-21T18:38:29.952+02:00  INFO 4060 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-21T18:38:29.952+02:00  INFO 4060 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-21T18:38:31.037+02:00  INFO 4060 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-21T18:38:31.050+02:00  INFO 4060 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-21T18:38:31.050+02:00  INFO 4060 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21T18:38:31.084+02:00  INFO 4060 --- [spring-boot1] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-04-21T18:38:31.084+02:00  INFO 4060 --- [spring-boot1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1132 ms
+2025-04-21T18:38:31.159+02:00  INFO 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.configs.StoneConfigs    : Loading subtitles: http://default.xyz, with profile: default
+2025-04-21T18:38:31.166+02:00  WARN 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.MindStone
+2025-04-21T18:38:31.168+02:00  WARN 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.PowerStone
+2025-04-21T18:38:31.169+02:00  WARN 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.RealityStone
+2025-04-21T18:38:31.169+02:00  WARN 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SoulStone
+2025-04-21T18:38:31.170+02:00  WARN 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SpaceStone
+2025-04-21T18:38:31.171+02:00  WARN 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.TimeStone
+2025-04-21T18:38:31.172+02:00  WARN 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.services.GuantletServiceImpl
+2025-04-21T18:38:31.173+02:00  WARN 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.components.Thanos
+2025-04-21T18:38:31.173+02:00  WARN 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : DANGER START BATTLE!!!
+2025-04-21T18:38:31.176+02:00  INFO 4060 --- [spring-boot1] [restartedMain] c.a.s.components.ThanosComponent         : Loading Thanos configs: ThanosModel(planet=Titán, galaxy=Andromeda, defaultDestructionLevel=788)
+2025-04-21T18:38:31.179+02:00  WARN 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.PowerStone
+2025-04-21T18:38:31.497+02:00  INFO 4060 --- [spring-boot1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-21T18:38:31.530+02:00  INFO 4060 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-04-21T18:38:31.539+02:00  INFO 4060 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 2.099 seconds (process running for 2.509)
+2025-04-21T18:38:34.705+02:00  INFO 4060 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-21T18:38:34.711+02:00  INFO 4060 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-21T18:38:34.714+02:00  WARN 4060 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.components.Thanos       : BATTLE END
+2025-04-21T18:38:34.714+02:00  INFO 4060 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.utils.AvengerNotifier   : Gauntlet was destroyed
