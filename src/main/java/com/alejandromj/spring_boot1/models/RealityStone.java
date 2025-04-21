@@ -1,5 +1,6 @@
 package com.alejandromj.spring_boot1.models;
 
+import com.alejandromj.spring_boot1.utils.AvengerNotifier;
 import lombok.ToString;
 import lombok.extern.java.Log;
 
@@ -14,6 +15,10 @@ public class RealityStone extends Stone{
             Integer energyLevelProperty
     ) {
         super(colorProperty, nameProperty, locationProperty, energyLevelProperty);
+    }
+
+    public void sendReality(){
+        AvengerNotifier.sendNotification(RealityStone.class);
     }
 
     @Override

@@ -68,7 +68,7 @@ public class StoneConfigs {
     }
 
     //Los métodos tienen que ser públicos.
-    @Bean(name = "mind")
+    @Bean(name = "mind", initMethod = "sendMind")
     @Scope("prototype")
     @ConditionalOnProperty(name = "stones.mind.enabled", havingValue = "true")
     public MindStone mindStone(){
@@ -76,7 +76,7 @@ public class StoneConfigs {
     }
 
     //Los métodos tienen que ser públicos.
-    @Bean(name = "power")
+    @Bean(name = "power", initMethod = "sendPower")
     @Scope("prototype")
     @ConditionalOnProperty(name = "stones.power.enabled", havingValue = "true")
     public PowerStone powerStone(){
@@ -84,7 +84,7 @@ public class StoneConfigs {
     }
 
     //Los métodos tienen que ser públicos.
-    @Bean(name = "reality")
+    @Bean(name = "reality", initMethod = "sendReality")
     @Scope("prototype")
     @ConditionalOnProperty(name = "stones.reality.enabled", havingValue = "true")
     public RealityStone realityStone(){
@@ -92,7 +92,7 @@ public class StoneConfigs {
     }
 
     //Los métodos tienen que ser públicos.
-    @Bean(name = "soul")
+    @Bean(name = "soul", initMethod = "sendSoul")
     @Scope("prototype")
     @ConditionalOnProperty(name = "stones.soul.enabled", havingValue = "true")
     public SoulStone soulStone(){
@@ -100,7 +100,7 @@ public class StoneConfigs {
     }
 
     //Los métodos tienen que ser públicos.
-    @Bean(name = "space")
+    @Bean(name = "space", initMethod = "sendSpace")
     @Scope("prototype")
     @ConditionalOnProperty(name = "stones.space.enabled", havingValue = "true")
     public SpaceStone spaceStone(){
@@ -108,7 +108,7 @@ public class StoneConfigs {
     }
 
     //Los métodos tienen que ser públicos.
-    @Bean(name = "time")
+    @Bean(name = "time", initMethod = "sendTime")
     @Scope("prototype")
     @ConditionalOnProperty(name = "stones.time.enabled")
     public TimeStone timeStone(){

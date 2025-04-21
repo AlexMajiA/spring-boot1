@@ -1,6 +1,7 @@
 package com.alejandromj.spring_boot1.utils;
 
 
+import com.alejandromj.spring_boot1.components.Thanos;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -15,5 +16,8 @@ public class AvengerNotifier {
         log.warn("Attention new class created: {}", clazz.getName());
 
 
+        if (clazz.equals(Thanos.class)){
+            log.warn("DANGER START BATTLE!!!");
+        }
     }
 }

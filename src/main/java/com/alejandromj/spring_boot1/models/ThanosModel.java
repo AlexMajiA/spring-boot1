@@ -8,7 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix = "thanos.config")  //el p`refijo hace alusión al prefijo de las configuraciones.
+@ConfigurationProperties(prefix = "thanos.config")  //el prefijo hace alusión al prefijo de las configuraciones.
 @AllArgsConstructor
 @NoArgsConstructor
 @Data  //Crea Setter, Getter, HashCode y ToString automáticamente.
