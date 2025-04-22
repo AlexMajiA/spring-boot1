@@ -5,6 +5,7 @@ import com.alejandromj.spring_boot1.utils.AvengerNotifier;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import lombok.Getter;
+import lombok.Value;
 import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
@@ -30,7 +31,7 @@ import java.util.Arrays;
  * @Qualifier("..."): Le especifica cuál de los beans de tipo Stone debe usar.
  */
 
-@Service  //Las AdwareInterface se pueden utilizar con @Component, @Repository, @Controller o RestController.
+@Service(value = "Gauntlet") //Las AdwareInterface se pueden utilizar con @Component, @Repository, @Controller o RestController.
 @Slf4j
 @Getter
 @Primary
@@ -61,6 +62,8 @@ public class GuantletServiceImpl implements GuantletService{
     private final Stone space;
     private final Stone time;
 
+    private String beanName;
+
     //La inyección de dependencias recomendada para Spring Boot es mediante un constructor.
     //Constructor por parámetros.
     @Autowired
@@ -85,11 +88,17 @@ public class GuantletServiceImpl implements GuantletService{
 @PostConstruct
 public  void init(){
     AvengerNotifier.sendNotification(this.getClass());
+
+    log.info("Bean name is: {}", this.beanName );
+
+    //System.out.println(this.beanName);
 }
 
     @Override
     public void useGuantlet(String stoneName) {
         //log.info("Use stone: " + reality);
+
+        log.info("Use Stone by {}", this.beanName);
 
         switch (stoneName) {
             case "mind" -> log.info("Use stone: " + this.mind);
@@ -144,5 +153,10 @@ public  void init(){
         }else {
             log.info("Gauntlet create in correct location");
         }
+    }
+
+    @Override
+    public void setBeanName(String name) {
+        this.beanName = name;
     }
 }
