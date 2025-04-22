@@ -1,5 +1,6 @@
 package com.alejandromj.spring_boot1;
 
+import com.alejandromj.spring_boot1.components.Thanos;
 import com.alejandromj.spring_boot1.components.ThanosComponent;
 import com.alejandromj.spring_boot1.services.GuantletService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,12 @@ private final GuantletService guantletService;
 
     public SpringBoot1Application(GuantletService guantletService) {
         this.guantletService = guantletService;
+
+
     }
+@Autowired
+private Thanos thanos;
+
 
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -82,10 +88,11 @@ private final GuantletService guantletService;
 
        guantletService.useGuantlet("mind");
 
+       thanos.snap();
 
 //----------------------------------------------------------------------------------------------------------------------
 
-        //thanos.snap();
+       // thanos.snap();
 
 
 
