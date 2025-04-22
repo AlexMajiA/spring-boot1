@@ -389,3 +389,103 @@
 2025-04-22T09:49:57.297+02:00  INFO 5184 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
 2025-04-22T09:49:57.299+02:00  WARN 5184 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.components.Thanos       : BATTLE END
 2025-04-22T09:49:57.300+02:00  INFO 5184 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.utils.AvengerNotifier   : Gauntlet was destroyed
+2025-04-22T09:50:00.221+02:00  INFO 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Starting SpringBoot1Application using Java 21.0.3 with PID 2104 (C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes started by amjpa in C:\Users\amjpa\IdeaProjects\spring-boot1)
+2025-04-22T09:50:00.223+02:00  INFO 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : No active profile set, falling back to 1 default profile: "default"
+2025-04-22T09:50:00.276+02:00  INFO 2104 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-22T09:50:00.277+02:00  INFO 2104 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-22T09:50:01.255+02:00  INFO 2104 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-22T09:50:01.272+02:00  INFO 2104 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-22T09:50:01.273+02:00  INFO 2104 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-22T09:50:01.309+02:00  INFO 2104 --- [spring-boot1] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-04-22T09:50:01.309+02:00  INFO 2104 --- [spring-boot1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1032 ms
+2025-04-22T09:50:01.366+02:00  INFO 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.configs.StoneConfigs    : Loading subtitles: http://default.xyz, with profile: default
+2025-04-22T09:50:01.370+02:00  WARN 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.MindStone
+2025-04-22T09:50:01.371+02:00  WARN 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.PowerStone
+2025-04-22T09:50:01.372+02:00  WARN 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.RealityStone
+2025-04-22T09:50:01.372+02:00  WARN 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SoulStone
+2025-04-22T09:50:01.373+02:00  WARN 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SpaceStone
+2025-04-22T09:50:01.374+02:00  WARN 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.TimeStone
+2025-04-22T09:50:01.375+02:00  INFO 2104 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Gauntlet create in correct location
+2025-04-22T09:50:01.376+02:00  INFO 2104 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Active stones active [mind, power, reality, soul, space, time]
+2025-04-22T09:50:01.377+02:00  WARN 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.services.GuantletServiceImpl
+2025-04-22T09:50:01.377+02:00  INFO 2104 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Bean name is: Gauntlet
+2025-04-22T09:50:01.379+02:00  WARN 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.components.Thanos
+2025-04-22T09:50:01.380+02:00  WARN 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : DANGER START BATTLE!!!
+2025-04-22T09:50:01.383+02:00  INFO 2104 --- [spring-boot1] [restartedMain] c.a.s.components.ThanosComponent         : Loading Thanos configs: ThanosModel(planet=Titán, galaxy=Andromeda, defaultDestructionLevel=788)
+2025-04-22T09:50:01.697+02:00  INFO 2104 --- [spring-boot1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-22T09:50:01.732+02:00  INFO 2104 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-04-22T09:50:01.741+02:00  INFO 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 1.977 seconds (process running for 2.384)
+2025-04-22T09:50:01.745+02:00  INFO 2104 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Use Stone by Gauntlet
+2025-04-22T09:50:01.746+02:00  INFO 2104 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Use stone: MindStone(super=Stone(color=Yellow, name=Mind Stone, location=Scepter, energyLevel=4, numberOfSides=6))
+2025-04-22T09:50:01.746+02:00  INFO 2104 --- [spring-boot1] [restartedMain] c.a.spring_boot1.components.Thanos       : Thanos snap
+2025-04-22T09:50:01.746+02:00  INFO 2104 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : USING ALL POWER
+2025-04-22T09:57:28.081+02:00  INFO 2104 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-22T09:57:28.087+02:00  INFO 2104 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-22T09:57:28.090+02:00  WARN 2104 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.components.Thanos       : BATTLE END
+2025-04-22T09:57:28.090+02:00  INFO 2104 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.utils.AvengerNotifier   : Gauntlet was destroyed
+2025-04-22T09:57:43.116+02:00  INFO 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Starting SpringBoot1Application using Java 21.0.3 with PID 17712 (C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes started by amjpa in C:\Users\amjpa\IdeaProjects\spring-boot1)
+2025-04-22T09:57:43.118+02:00  INFO 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : No active profile set, falling back to 1 default profile: "default"
+2025-04-22T09:57:43.171+02:00  INFO 17712 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-22T09:57:43.171+02:00  INFO 17712 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-22T09:57:44.179+02:00  INFO 17712 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-22T09:57:44.193+02:00  INFO 17712 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-22T09:57:44.193+02:00  INFO 17712 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-22T09:57:44.228+02:00  INFO 17712 --- [spring-boot1] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-04-22T09:57:44.228+02:00  INFO 17712 --- [spring-boot1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1056 ms
+2025-04-22T09:57:44.287+02:00  INFO 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.configs.StoneConfigs    : Loading subtitles: http://default.xyz, with profile: default
+2025-04-22T09:57:44.290+02:00  WARN 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.MindStone
+2025-04-22T09:57:44.292+02:00  WARN 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.PowerStone
+2025-04-22T09:57:44.292+02:00  WARN 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.RealityStone
+2025-04-22T09:57:44.293+02:00  WARN 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SoulStone
+2025-04-22T09:57:44.294+02:00  WARN 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SpaceStone
+2025-04-22T09:57:44.295+02:00  WARN 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.TimeStone
+2025-04-22T09:57:44.296+02:00  INFO 17712 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Gauntlet create in correct location
+2025-04-22T09:57:44.297+02:00  INFO 17712 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Active stones active [mind, power, reality, soul, space, time]
+2025-04-22T09:57:44.298+02:00  WARN 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.services.GuantletServiceImpl
+2025-04-22T09:57:44.298+02:00  INFO 17712 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Bean name is: Gauntlet
+2025-04-22T09:57:44.301+02:00  WARN 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.components.Thanos
+2025-04-22T09:57:44.301+02:00  WARN 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : DANGER START BATTLE!!!
+2025-04-22T09:57:44.304+02:00  INFO 17712 --- [spring-boot1] [restartedMain] c.a.s.components.ThanosComponent         : Loading Thanos configs: ThanosModel(planet=Titán, galaxy=Andromeda, defaultDestructionLevel=788)
+2025-04-22T09:57:44.602+02:00  INFO 17712 --- [spring-boot1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-22T09:57:44.636+02:00  INFO 17712 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-04-22T09:57:44.644+02:00  INFO 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 1.974 seconds (process running for 2.388)
+2025-04-22T09:57:44.649+02:00  INFO 17712 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Use Stone by Gauntlet
+2025-04-22T09:57:44.649+02:00  INFO 17712 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Use stone: MindStone(super=Stone(color=Yellow, name=Mind Stone, location=Scepter, energyLevel=4, numberOfSides=6))
+2025-04-22T09:57:44.649+02:00  INFO 17712 --- [spring-boot1] [restartedMain] c.a.spring_boot1.components.Thanos       : Thanos snap
+2025-04-22T09:57:44.649+02:00  INFO 17712 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : USING ALL POWER
+2025-04-22T10:00:35.355+02:00  INFO 17712 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-22T10:00:35.362+02:00  INFO 17712 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-22T10:00:35.365+02:00  WARN 17712 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.components.Thanos       : BATTLE END
+2025-04-22T10:00:35.365+02:00  INFO 17712 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.utils.AvengerNotifier   : Gauntlet was destroyed
+2025-04-22T10:00:38.541+02:00  INFO 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Starting SpringBoot1Application using Java 21.0.3 with PID 11956 (C:\Users\amjpa\IdeaProjects\spring-boot1\target\classes started by amjpa in C:\Users\amjpa\IdeaProjects\spring-boot1)
+2025-04-22T10:00:38.545+02:00  INFO 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : No active profile set, falling back to 1 default profile: "default"
+2025-04-22T10:00:38.607+02:00  INFO 11956 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-22T10:00:38.607+02:00  INFO 11956 --- [spring-boot1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-22T10:00:39.622+02:00  INFO 11956 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-22T10:00:39.636+02:00  INFO 11956 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-22T10:00:39.637+02:00  INFO 11956 --- [spring-boot1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-22T10:00:39.678+02:00  INFO 11956 --- [spring-boot1] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-04-22T10:00:39.678+02:00  INFO 11956 --- [spring-boot1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1070 ms
+2025-04-22T10:00:39.741+02:00  INFO 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.configs.StoneConfigs    : Loading subtitles: http://default.xyz, with profile: default
+2025-04-22T10:00:39.744+02:00  WARN 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.MindStone
+2025-04-22T10:00:39.745+02:00  WARN 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.PowerStone
+2025-04-22T10:00:39.746+02:00  WARN 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.RealityStone
+2025-04-22T10:00:39.747+02:00  WARN 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SoulStone
+2025-04-22T10:00:39.747+02:00  WARN 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.SpaceStone
+2025-04-22T10:00:39.748+02:00  WARN 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.models.TimeStone
+2025-04-22T10:00:39.749+02:00  INFO 11956 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Gauntlet create in correct location
+2025-04-22T10:00:39.750+02:00  INFO 11956 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Active stones active [mind, power, reality, soul, space, time]
+2025-04-22T10:00:39.751+02:00  WARN 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.services.GuantletServiceImpl
+2025-04-22T10:00:39.751+02:00  INFO 11956 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Bean name is: Gauntlet
+2025-04-22T10:00:39.754+02:00  WARN 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : Attention new class created: com.alejandromj.spring_boot1.components.Thanos
+2025-04-22T10:00:39.755+02:00  WARN 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.utils.AvengerNotifier   : DANGER START BATTLE!!!
+2025-04-22T10:00:39.757+02:00  INFO 11956 --- [spring-boot1] [restartedMain] c.a.s.components.ThanosComponent         : Loading Thanos configs: ThanosModel(planet=Titán, galaxy=Andromeda, defaultDestructionLevel=788)
+2025-04-22T10:00:40.054+02:00  INFO 11956 --- [spring-boot1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-22T10:00:40.092+02:00  INFO 11956 --- [spring-boot1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-04-22T10:00:40.100+02:00  INFO 11956 --- [spring-boot1] [restartedMain] c.a.spring_boot1.SpringBoot1Application  : Started SpringBoot1Application in 2.007 seconds (process running for 2.404)
+2025-04-22T10:00:40.104+02:00  INFO 11956 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Use Stone by Gauntlet
+2025-04-22T10:00:40.105+02:00  INFO 11956 --- [spring-boot1] [restartedMain] c.a.s.services.GuantletServiceImpl       : Use stone: MindStone(super=Stone(color=Yellow, name=Mind Stone, location=Scepter, energyLevel=4, numberOfSides=6))
+2025-04-22T10:02:21.544+02:00  INFO 11956 --- [spring-boot1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-22T10:02:21.550+02:00  INFO 11956 --- [spring-boot1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-22T10:02:21.552+02:00  WARN 11956 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.components.Thanos       : BATTLE END
+2025-04-22T10:02:21.553+02:00  INFO 11956 --- [spring-boot1] [SpringApplicationShutdownHook] c.a.spring_boot1.utils.AvengerNotifier   : Gauntlet was destroyed

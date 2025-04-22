@@ -10,7 +10,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
+import org.springframework.context.ResourceLoaderAware;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -18,7 +21,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 //@Lazy
 
-public class Thanos implements ApplicationEventPublisherAware {
+public class Thanos implements ApplicationEventPublisherAware, ResourceLoaderAware {
 
     private final GuantletService guantletService;
 
@@ -43,6 +46,15 @@ public class Thanos implements ApplicationEventPublisherAware {
     @Override
     public void setApplicationEventPublisher(ApplicationEventPublisher applicationEventPublisher) {
         this.publisher = applicationEventPublisher;
+    }
+
+    @Override
+    public void setResourceLoader(ResourceLoader resourceLoader) {
+        final Resource resource = resourceLoader.getResource("classpath:configs/stone.properties");
+
+        if (!resource.isReadable()){
+            throw new IllegalStateException("Cant create Thanos because not exist confid file");
+        }
     }
 
     public static class ThanosEvent extends ApplicationEvent{

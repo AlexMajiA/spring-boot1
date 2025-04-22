@@ -7,9 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
-
+@PropertySource("classpath:configs/stone.properties")
 public class SpringBoot1Application implements CommandLineRunner {
 
 @Autowired
@@ -20,6 +21,7 @@ private final GuantletService guantletService;
 
 
     }
+
 @Autowired
 private Thanos thanos;
 
